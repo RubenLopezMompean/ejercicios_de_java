@@ -19,10 +19,10 @@ public class C03Ejercicio09 {
     linea = System.console().readLine();
     double altura = Double.parseDouble( linea );
 
-    double volumen = ; (1 / 2 * 3.14 * radio * radio * altura) ;
+    double volumen = ((1.0 / 3.0) * 3.14 * radio * radio * altura) ;
     
     System.out.print("Volumen: ");
-    System.out.println(total + " litros  ");
+    System.out.println(volumen + " litros  ");
 
   } 
 }
