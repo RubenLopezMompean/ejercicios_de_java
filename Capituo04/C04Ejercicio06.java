@@ -7,27 +7,20 @@
  */
 
 public class C04Ejercicio06 {
-	public static void main(String[] args) { 	
-   
-    int g = (9.81 + ("m/s2"))
-  
-    System.out.print("Este programa resuelve la incógnita t");
-    System.out.print("Introduzca el valor de h: ");
-    Double a = Double.parseDouble(System.console().readLine());
-   
-    if (h == 0) {
-      System.out.println("No tiene solución");
-    } else {
-      System.out.println("t = " + Math.sqrt ((2 * h) / g)
-   /**
-    System.out.print("Este programa resuelve la incógnita t");
-    System.out.print("Introduzca el valor de h: ");
-    Double a = Double.parseDouble(System.console().readLine());
-
-    if (a == 0) {
-      System.out.println("No tiene solución.");
-    } else {
-      System.out.println("x = " + (-b/a));
-   */
+	public static void main (String[] args){
+    System.out.print("Vamos a calcular el tiempo que tardará en caer un ");
+    System.out.println(" objeto desde una altura h.");
+    
+    System.out.print("Introduzca la altura (h) en metros: ");
+    int h = Integer.parseInt(System.console().readLine());
+    
+    if (h > 0){
+      System.out.print("El tiempo que tarda en caer un objeto ");
+      System.out.print("desde " + h + "m. es: ");
+      System.out.printf("%.2f segundos", Math.sqrt((2.0*h)/9.81));
+    }else{
+      System.out.print("Altura incorrecta.");
+    }
   }
 }
+

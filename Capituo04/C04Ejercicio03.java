@@ -42,6 +42,6 @@ public class C04Ejercicio03 {
     
      }
      
-     System.out.println("Dia " + dia + ": " + nombreDelDia);
+     System.out.println("Dia de la semana es " + dia + ": " + nombreDelDia);
 	}
 }
