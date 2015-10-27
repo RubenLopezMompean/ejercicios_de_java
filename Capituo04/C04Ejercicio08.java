@@ -22,8 +22,13 @@ public class C04Ejercicio08 {
     double nota3 = Double.parseDouble(System.console().readLine());
     
     double notaFinal = ((nota1 + nota2 + nota3) /3);
-    
-    System.out.printf("La nota media es " + notaFinal );
+     if ((nota1 >= 0) && (nota1 <= 10) &&
+       (nota2 >= 0) && (nota2 <= 10) &&
+       (nota3 >= 0) && (nota3 <= 10)) {
+    System.out.printf("La nota media es %.2f" , notaFinal );
+      } else {
+      System.out.println("Los datos introducidos no son correctos");
+    }
     
     if (notaFinal < 5 ) {
       System.out.print(" Suspenso");
@@ -31,10 +36,10 @@ public class C04Ejercicio08 {
     if (notaFinal == 5 ) {
       System.out.print(" Insuficiente");
     }
-    if (notaFinal >= 6) {
+    if ((notaFinal >= 6)  && (notaFinal < 7)){
       System.out.print(" Bien");
     }
-    if ((notaFinal >= 7) && (notaFinal <=8)) {
+    if ((notaFinal >= 7) && (notaFinal <= 8)) {
       System.out.print(" Notable");
     }
     if ((notaFinal >= 9) && (notaFinal <= 10)) {
