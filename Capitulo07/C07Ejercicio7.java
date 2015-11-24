@@ -17,8 +17,6 @@ public class C07Ejercicio7 {
     int valor2;
     int num[] = new int[100];
     
-    System.out.println("Introduce 15 números:");
-    // Genera 20 números aleatorios en la array
     for (int i = 0; i < 100; i++) {
       num[i] = (int)(Math.random()*21);
     
