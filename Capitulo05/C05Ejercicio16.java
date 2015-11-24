@@ -11,16 +11,16 @@ public class C05Ejercicio16 {
     
     System.out.println("Este programa dice si un número es primo o no.");
     System.out.print("\nDime un número y te diré si es primo o no: ");
-    int n = Integer.parseInt(System.console().readLine());
-    boolean primo = true;
+    long n = Long.parseLong(System.console().readLine());
+    boolean esPrimo = true;
     
-    for (int i = 2; i < n; i++) {
+    for (long i = 2; i < n; i++) {
       if ((n % i) == 0) {
-        primo = false;
+        esPrimo = false;
       }
     }
         
-    if (primo) {
+    if (esPrimo) {
       System.out.println("Este número es primo.");
     } else {
       System.out.println("Este número no es primo.");

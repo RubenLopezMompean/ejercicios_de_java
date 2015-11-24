@@ -12,15 +12,18 @@ public class C05Ejercicio17 {
     System.out.println("Este programa dice si un número es primo o no.");
     System.out.print("\nDime un número y te diré si es primo o no: ");
     int n = Integer.parseInt(System.console().readLine());
-    int i = 0;
+    
+    int suma = 0;
+    int i;
     
     if (n >= 0) {
       for (i = n +1 ; i <= n + 100; i++) {
-        System.out.println(i);
+        suma = suma + i;
       } 
     } else {
-        System.out.println("Este número no es positivo.");
-      }
+      System.out.println("Este número no es positivo.");
+    } 
+    System.out.println(suma);
   }
 }
 

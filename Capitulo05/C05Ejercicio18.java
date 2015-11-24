@@ -12,16 +12,41 @@ public class C05Ejercicio18 {
     System.out.print("Este programa incrementa en 7 el primer número hasta");
     System.out.println("llegar lo más próximo al segundo número.");
     
-    System.out.print("\nDime un número del que partir: ");
-    int primerNum = Integer.parseInt(System.console().readLine());
     
-    System.out.print("Introduce el valor máximo: ");
-    int segundoNum = Integer.parseInt(System.console().readLine());
+    int primerNum;
+    int segundoNum;
     
     do {
-      System.out.println(primerNum);
-      primerNum = primerNum + 7;
-    } while (primerNum <= segundoNum);
+      System.out.print("\nDime un primer número: ");
+      primerNum = Integer.parseInt(System.console().readLine());
+      
+      System.out.print("Dime un segundo número: ");
+      segundoNum = Integer.parseInt(System.console().readLine());
+      
+      if (primerNum == segundoNum) {
+        System.out.println("Los números deben ser diferentes");
+        }
+    } while (primerNum == segundoNum);
+    
+    if (primerNum > segundoNum) {
+      int aux = primerNum;
+      segundoNum = segundoNum;
+      segundoNum = aux;
+    }
+    int contador = primerNum;
+    System.out.println("\nLos numeros son los siguientes:");
+    
+    while (contador < segundoNum) {
+      
+      if ((contador < segundoNum) && (contador + 7 < segundoNum)){
+        System.out.print(contador + ", ");
+      } else {
+        System.out.print(contador);
+      }
+      contador = contador + 7;
+    }
+    System.out.print(".");
   }
 }
+
 

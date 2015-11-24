@@ -13,7 +13,7 @@ public class C05Ejercicio13 {
     int negativo = 0;
      
     System.out.println("Este programa cuenta los números positivos y los negativos");
-    System.out.println("\nIntroduce un número: ");
+    System.out.println("\nIntroduce 10 números y pulsa intro después de cada uno: ");
      
     for (int x = 0; x < 10; x++) {
      
@@ -26,7 +26,7 @@ public class C05Ejercicio13 {
         positivo++;
       }
     }
-    System.out.print(" positivos " + positivo + " negativos " + negativo);
+    System.out.println("El número de positivos es " + positivo + " y de negativos " + negativo);
   }
 }
 

@@ -9,19 +9,30 @@
 public class C05Ejercicio19 {
   public static void main(String[] args) {
     
-    System.out.print("Este programa incrementa en 7 el primer número hasta");
-    System.out.println("llegar lo más próximo al segundo número.");
+    System.out.println("Este programa dibuja una pirámide conociendo su altura.");
     
-    System.out.print("\nDime un número del que partir: ");
-    int primerNum = Integer.parseInt(System.console().readLine());
+    System.out.print("Introduzca la altura: ");
+    int alturaIntroducida = Integer.parseInt(System.console().readLine());
     
-    System.out.print("Introduce el valor máximo: ");
-    int segundoNum = Integer.parseInt(System.console().readLine());
+    System.out.print("Introduzca el carácter que dibuje la pirámide: ");
+    String caracter = System.console().readLine();
     
-    do {
-      System.out.println(primerNum);
-      primerNum = primerNum + 7;
-    } while (primerNum <= segundoNum);
+    int altura = 1;
+    int i = 0;
+    int espacios = alturaIntroducida - 1;
+    
+    while (altura <= alturaIntroducida) {  
+      
+      for (i = 1; i <= espacios; i++) {
+        System.out.print(" ");
+      }
+      for (i = 1; i < altura * 2; i++) {
+        System.out.print(caracter);
+      }
+      System.out.println();
+      altura++;
+      espacios--;
+    }
   }
 }
 
