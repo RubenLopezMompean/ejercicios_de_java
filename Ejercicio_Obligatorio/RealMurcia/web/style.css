@@ -1,0 +1,122 @@
+* { 
+    margin: 0; 
+    padding: 0;
+}
+
+body { 
+
+  /* Texto */
+
+  font-size: 1.0em;
+  font-family: "Times New Roman", Georgia, Calibri, serif;
+  color: black;
+
+  /* Eye Candy */
+
+  background: linear-gradient(to right, #C90000 0%, #CECECE 50%, #C90000 100%);
+    
+}
+header.main{
+  margin-top:1rem;
+  text-align:center;
+  font-size:3rem;
+  letter-spacing:2rem;
+  color:black;
+}
+    
+img.titulo{
+  float:left; 
+  width:136px;
+  height:238px;
+  position:absolute;
+  top:0.5rem;
+  left:7rem;
+}
+div{
+  margin-top:1rem;
+}
+table {
+  margin: 15px auto;
+  width: 80%;
+  border-spacing: 0px;
+  border-bottom: 1px solid black;
+
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+
+  box-shadow: 0px 0 10px 3px black;
+    
+}
+
+table #trcabecera {
+  height: 50px;  
+}
+
+#cabecera {
+    
+  font-size: 1.50em;
+
+  background: #ff3838;    
+  overflow: hidden;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+
+  font-style: normal;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px white;
+
+  padding: 5px 5px;
+
+}
+
+
+#primeraFila td {
+    
+  font-weight: bold;
+
+  padding-left: 4px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+td.td1 {
+  border-left: 1px solid black;
+}
+
+td.td2 {
+  border-right: 1px solid black;
+}
+
+td {
+  padding-left: 4px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+tr:nth-child(even) {
+  background: rgba(0, 102, 242, 0.13)
+}
+
+
+a {
+  text-decoration: none;
+}
+
+form {
+  display: inline;
+  margin-right: 4px;
+}
+
+input[type=submit] {
+  display: inline-block;
+  width: 75px;
+}
+
+input[type=button] {
+  display: inline-block;
+  width: 75px;
+}
